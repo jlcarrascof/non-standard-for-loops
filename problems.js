@@ -28,7 +28,7 @@ function secondPower(arr) {
     // Your code here
     const finalArray = [];
     for (let i = 0; i < arr.length; i++) {
-        if (arr[i] !== 0 && (arr[i] & (arr[i] - 1)) === 0) {
+        if (arr[i] !== 0 && (arr[i] & (arr[i] - 1)) === 0 && arr[i] !== 1) {
             finalArray.push(i);
         }
     }

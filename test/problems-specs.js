@@ -31,7 +31,9 @@ describe("Problems", function () {
             expect(secondPower([])).to.deep.equal([]);
         });
         it('should return only indices of powers of 2', function () {
-            expect(secondPower([1, 2, 3, 4, 5, 6, 7, 8])).to.deep.equal([2, 3, 5]);
+            // expect(secondPower([1, 2, 3, 4, 5, 6, 7, 8])).to.deep.equal([2, 3, 5]);
+            // Fix Test (Positions 1, 3, 7 are powers of two)
+            expect(secondPower([1, 2, 3, 4, 5, 6, 7, 8])).to.deep.equal([1, 3, 7]);
         });
     })
 
