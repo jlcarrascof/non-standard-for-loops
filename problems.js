@@ -52,6 +52,17 @@ function firstHalf(arr) {
     // Return an array containing the first half of an array
     // Include middle index on odd length arr
     // Your code here
+    var lengthArray = arr.length; // 7
+    var resultArray = [];
+    // Determine if it is a pair or odd number
+    var limit = Math.abs(lengthArray / 2);
+    if (limit !== 0) {
+        for (let i=0; i < limit; i++) {
+            resultArray.push(arr[i]);
+        }
+    }
+
+    return resultArray;
 }
 
 function secondHalf(arr) {
