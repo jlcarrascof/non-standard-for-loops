@@ -26,7 +26,13 @@ function oddReverse(arr) {
 function secondPower(arr) {
     // Return an array containing all indices that are powers of 2
     // Your code here
-    return arr.filter(num => (num & (num - 1)) === 0);
+    const finalArray = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] !== 0 && (arr[i] & (arr[i] - 1)) === 0) {
+            finalArray.push(i);
+        }
+    }
+    return finalArray;
 }
 
 function nthPower(arr, n) {
