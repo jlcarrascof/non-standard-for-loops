@@ -6,7 +6,7 @@ function firstHalf(arr) {
     var resultArray = [];
     // Determine if it is a pair or odd number
     var limit = Math.abs(lengthArray / 2);
-    for (let i=0; i <= limit; i++) {
+    for (let i=0; i < limit; i++) {
         resultArray.push(arr[i]);
     }
 
