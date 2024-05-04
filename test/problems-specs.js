@@ -32,7 +32,7 @@ describe("Problems", function () {
         });
         it('should return only indices of powers of 2', function () {
             // expect(secondPower([1, 2, 3, 4, 5, 6, 7, 8])).to.deep.equal([2, 3, 5]);
-            // Fix Test (Positions 1, 3, 7 are powers of two)
+            // Fix Test (Positions 0, 1, 3, 7 are powers of two)
             expect(secondPower([1, 2, 3, 4, 5, 6, 7, 8])).to.deep.equal([0, 1, 3, 7]);
         });
     })
