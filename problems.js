@@ -36,19 +36,16 @@ function secondPower(arr) {
 }
 
 function nthPower(arr, n) {
-    let result = []; // Inicializar arreglo vacío para los resultados
-    for (let i = 0; i < arr.length; i++) { // Iterar sobre el arreglo
-        // Calcular el logaritmo base n del elemento arr[i]
-        if (arr[i] > 0 && Number.isInteger(Math.log(arr[i]) / Math.log(n))) {
-            // Verificar si el logaritmo es un número entero
-            let exponent = Math.log(arr[i]) / Math.log(n);
-            // Verificar si n elevado a ese exponente es igual al elemento
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > 0) {
+            let exponent = Math.round(Math.log(arr[i]) / Math.log(n));
             if (Math.pow(n, exponent) === arr[i]) {
-                result.push(i); // Si es igual, agregar el índice al arreglo de resultados
+                result.push(i);
             }
         }
     }
-    return result; // Devolver el arreglo de resultados
+    return result;
 }
 
 function firstHalf(arr) {
