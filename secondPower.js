@@ -21,7 +21,7 @@ function secondPower(arr) {
       }
     }
     return finalArray;
-  }
+}
 
-  result = secondPower([1, 2, 3, 4, 5, 6, 7, 8]);
-  console.log(result); // [0, 1, 3, 7]
+result = secondPower([1, 2, 3, 4, 5, 6, 7, 8]);
+console.log(result); // [0, 1, 3, 7]
